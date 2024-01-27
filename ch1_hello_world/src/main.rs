@@ -7,6 +7,7 @@
 /**
     文档注释
 */
+#[allow(unused)]
 fn test_comments() {
     //代码注释
     /*
@@ -18,6 +19,7 @@ fn test_comments() {
     println!("x = {x}");
 }
 
+#[allow(unused)]
 fn test_formatted_print() {
     println!("{} days", 10);
     println!("{0}_{1}_{1}_{0}", "hello", "rbe");
@@ -34,6 +36,7 @@ fn test_formatted_print() {
     println!("{0} is roughly {pi:.3}", "pi");
 }
 
+#[allow(unused)]
 fn test_debug() {
     #[derive(Debug)]
     struct DebugPrintable(i32);
@@ -61,6 +64,7 @@ fn test_debug() {
     println!("user: {:#?}", user);
 }
 
+#[allow(unused)]
 fn test_display() {
     use std::fmt;
     #[derive(Debug)]
@@ -117,6 +121,7 @@ fn test_display() {
     println!("Debug: {:?}", complex);
 }
 
+#[allow(unused)]
 fn test_list() {
     use std::fmt;
     struct List(Vec<i32>);
@@ -141,6 +146,7 @@ fn test_list() {
     println!("{}", List(v));
 }
 
+#[allow(unused)]
 fn test_formatting() {
     use std::fmt::{self, Formatter, Display};
 
